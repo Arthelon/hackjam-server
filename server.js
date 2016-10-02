@@ -17,6 +17,9 @@ app.use(bodyparser.urlencoded({extended: true}))
  * Routes
  */
 const apiBaseRoute = require("./routes/api")
+const bookRoute = require("./routes/book")
+
+app.use("/api/books/", bookRoute)
 app.use("/api", apiBaseRoute)
 
 /**

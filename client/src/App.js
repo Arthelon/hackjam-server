@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import Header from './components/Header'
 
 class App extends Component {
 
@@ -17,6 +18,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 {this.props.children}
             </div>
         );
